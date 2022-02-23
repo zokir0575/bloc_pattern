@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             ..add(LoadApiEvent()),
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Activities for bored people"),
+          title: const  Text("Activities for bored people"),
         ),
         body: BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
           if (state is HomeLoadingState) {
